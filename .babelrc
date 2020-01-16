@@ -1,0 +1,23 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "node": "9"
+        },
+        "useBuiltIns": "entry"
+      }
+    ]
+  ],
+  "plugins": [
+    "import-graphql",
+    [
+      "@babel/plugin-transform/runtime",
+      {
+        "polyfill": false,
+        "regenerator": true
+      }
+    ]
+  ]
+}
